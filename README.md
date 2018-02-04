@@ -26,7 +26,10 @@ all input data is validating and filtering
     },
 
 4. Add required modules to your Zend Framework (if not exists):
-on windows:
-  composer require zendframework/zend-validator
+
+```bash
+  $ composer require zendframework/zend-validator
+  $ composer require zendframework/zend-filter
+```
 
 Enjoy!
