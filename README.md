@@ -67,13 +67,13 @@ $(document).ready(function()
 		},
 		messages: {
 			email: {
-				required: 	'Електронна адресса не вказана',
-				email: 		'Електронна адреса вказана не вірно'
+				required: 	'Email Address is required',
+				email: 		'Email Address is not valid'
 			},
 			password: {
-				required: 	'Гасло не вказане',
-				minlength: 	'Гасло занадто маленьке',
-				maxlength: 	'Гасло занадто велике'
+				required: 	'Password is required',
+				minlength: 	'Password is too short',
+				maxlength: 	'Password is too long'
 			}
 		}
 	});
