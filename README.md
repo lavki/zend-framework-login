@@ -1,7 +1,11 @@
-# zend-framework-login
-Login - validation, filtering data
+# Zend Framework Login
 
-Instruction for implementation
+## Introduction
+
+This modul presended form with two imputs: email address and password
+all input data is validating and filtering
+
+## Instruction for implementation
 
 1. Clone this repository to your zend-framework project 
   (your-project/module/)
