@@ -1,0 +1,21 @@
+<h1>Login</h1>
+<form action="<?=$this->url('login');?>" method="post" id="authentication" autocomplete="off">
+<?php if( isset($error) ): ?>
+	<div>
+<?php foreach( $error as $key => $value): ?>
+		<?=$value;?>
+<?php endforeach; ?>
+	<div>
+<?php endif; ?>
+	<div>
+		<label for="email">Email Address: </label>
+		<input type="email" name="email" id="email" placeholder="email@example.com" value="<?=$this->email ?? null;?>" autofocus>
+	</div>
+	<div>
+		<label for="password">Password: </label>
+		<input type="password" name="password" id="password" placeholder="*******">
+	</div>
+	<div>
+		<input type="submit" value="Login">
+	</div>
+</form>
