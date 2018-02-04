@@ -31,5 +31,43 @@ all input data is validating and filtering
   $ composer require zendframework/zend-validator
   $ composer require zendframework/zend-filter
 ```
+## JavaScript file:
+
+```bash
+$(document).ready(function()
+{
+	// LOGIN VALIDATION FORM
+	$('#authentication').validate({
+		rules: {
+			email: {
+				required: 	true,
+				email: 		true
+			},
+			password: {
+				required: 	true,
+				minlength: 	5,
+				maxlength: 	30
+			}
+		},
+		messages: {
+			email: {
+				required: 	'Електронна адресса не вказана',
+				email: 		'Електронна адреса вказана не вірно'
+			},
+			password: {
+				required: 	'Гасло не вказане',
+				minlength: 	'Гасло занадто маленьке',
+				maxlength: 	'Гасло занадто велике'
+			}
+		}
+	});
+});
+```
+## add script to the your html page:
+
+```bash
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+```
 
 Enjoy!
